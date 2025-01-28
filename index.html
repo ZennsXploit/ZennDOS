@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeVTools - Simulasi Edukasi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔷 DeVTools</h1>
+        </header>
+
+        <div class="notice">
+            <p>⚠️ <strong>Important Notice</strong><br>
+            Alat ini hanya untuk simulasi edukasi. Tidak untuk penggunaan ilegal.</p>
+        </div>
+
+        <div class="card">
+            <h2>DoS & Load Testing</h2>
+            <p>Simulasi pengujian beban server.</p>
+
+            <label for="target-url">Target URL</label>
+            <input type="text" id="target-url" placeholder="https://example.com">
+
+            <label for="request-rate">Request Rate</label>
+            <select id="request-rate">
+                <option>100/sec</option>
+                <option>200/sec</option>
+                <option>500/sec</option>
+            </select>
+
+            <label for="duration">Duration</label>
+            <select id="duration">
+                <option>30 seconds</option>
+                <option>60 seconds</option>
+                <option>120 seconds</option>
+            </select>
+
+            <label for="method">Method</label>
+            <select id="method">
+                <option>GET</option>
+                <option>POST</option>
+            </select>
+
+            <div class="button-container">
+                <button id="start-test" class="start">▶ Start Test</button>
+                <button id="stop-test" class="stop">⏹ Stop Test</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Test Logs</h2>
+            <div id="logs"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
